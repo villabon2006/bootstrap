@@ -7,14 +7,105 @@
     <link href="css/bootstrap.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-    <h1 class="text-center">FRAMEWOK DE CSS - BOOTSTRAP</h1>
-    <p>Bootstrap es un framework de desarrollo web de código abierto que se utiliza para crear sitios web y aplicaciones móviles de manera rápida y eficiente. Fue creado por Twitter y se ha convertido en una herramienta muy popular en la comunidad de desarrollo.
-        La principal característica de Bootstrap es su enfoque en la creación de sitios web responsivos y adaptables. Proporciona un conjunto de estilos predefinidos y componentes que permiten a los desarrolladores construir interfaces de usuario de manera sencilla y consistente. Estos estilos y componentes están diseñados para adaptarse automáticamente a diferentes dispositivos y tamaños de pantalla, lo que garantiza que el sitio se vea bien en computadoras de escritorio, tabletas y teléfonos móviles.
-        Además de la capacidad de respuesta, Bootstrap ofrece una gran cantidad de características y funcionalidades que ayudan a agilizar el proceso de desarrollo. Esto incluye un sistema de rejilla flexible que facilita la organización y alineación de elementos en una página, un conjunto de clases de utilidad que permiten realizar modificaciones rápidas en el diseño y la apariencia, y una amplia variedad de componentes como menús desplegables, carruseles, formularios y mucho más.
-        Otra ventaja importante de Bootstrap es su enfoque en la compatibilidad entre navegadores. Se ha probado exhaustivamente en varios navegadores y versiones, lo que garantiza una experiencia coherente para los usuarios, independientemente del navegador que utilicen.
-        En resumen, Bootstrap es un framework de desarrollo web que proporciona una base sólida y fácil de usar para la creación de sitios web y aplicaciones móviles. Con su capacidad de respuesta, amplia gama de características y compatibilidad entre navegadores, se ha convertido en una herramienta esencial para muchos desarrolladores en la creación de proyectos web modernos y atractivos.</p>
-    </div>
+    <!--Inicio de menu-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--Fin de menu-->
+
+    <!--inicio carrusel-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner_2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner_3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    <!--fin carrusel-->
+     <!--inicio division-->
+    
+    <div class="row">
+        <div class="col-md-5 col-4 text-center">
+            <hr>
+        </div>
+        
+            
+        <div class="col-md-2 col-4 text-center">
+             <h1>*texto*</h1>
+        </div>
+            
+        
+         <div class="col-md-5 col-4 text-center">
+            <hr>
+        </div>
+        </div>
+      <!--fin division-->   
+    <!--inicio imagenes de muesta-->  
+        <div class="row">
+            <div class="col-md-3 "> </div>
+            
+             <div class="col-md-2 col-4 text-center">
+                 <img src="img/celular_1.jpg" class="img-thumbnail rounded-circle" alt="...">
+            </div>
+                
+            
+            <div class="col-md-2 col-4 text-center">
+                <img src="img/celular_2.jpg" class="img-thumbnail rounded-circle" alt="...">
+            </div>
+                    
+            <div class="col-md-2 col-4 text-center ">
+                <img src="img/celular_3.jpg" class="img-thumbnail rounded-circle" alt="...">
+            </div>
+            
+            <div class="col-md-3"> </div>
+            </div>
+     <!--fin imagenes de muestra-->        
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     </body>
